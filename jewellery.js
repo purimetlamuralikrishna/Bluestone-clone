@@ -10,7 +10,7 @@ var ringData_1=[
     {
         head:"10% OFF ON MAKING CHARGE",
         image:"https://kinclimg1.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIAB0503R04_YAA18DIG6XXXXXXXX_ABCD00-PICS-00001-1024-42031.png",
-        price:"21929",
+        price:"21,929",
         strikedoffPrice:"24,416",
         p:"Save",
         savePrice:"3,487"
