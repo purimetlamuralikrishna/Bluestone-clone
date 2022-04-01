@@ -169,6 +169,30 @@ body{
     z-index: 1;
 }
 
+.navbar>div h4{
+    color: rgb(76,136,192);
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+    font-family: Arial sans-serif;
+}
+.navbar>div hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.navbar>div a{
+    color: black;
+    line-height: 25px;
+}
+.navbar>div ul{
+    text-align: left;
+    padding: 0px 50px 0px 10px;
+}
+
+
+
+
+
+
 .ring-drop-container{
     display: flex;
 }
@@ -227,9 +251,8 @@ li{
 #top{
     display: flex;
     margin-top: 0%;
-    padding-top: 10px;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content:space-evenly;
     width: 100%;
     background-color: rgb(255,255,255);
 
@@ -263,7 +286,7 @@ li{
 #top-corner{
     margin-top: 0px;
     width: 30%;
-    padding-left: 20px;
+   
 }
 #LS{
     margin-top: 0px;
@@ -274,7 +297,9 @@ li{
 }
 #LS ul li{
     padding: 2px;
+    font-size: medium;
     list-style-type: none;
+    text-align: left;
 }
 #LS ul a{
     text-decoration: none;
@@ -288,25 +313,27 @@ li{
 }
 #icons{
     display: flex;
-    /* justify-content: center; */
 }
 #icons ul{
     display: inline-flex;
     margin: 0px;
+    margin-left: 0px;
+    text-align: left;
 }
 #icons ul li{
     list-style-type: none;
     padding: 2px;
     font-size: 15px
 }
-.fa-solid{
+.fa-solid,.fa-regular{
     font-size: 30px;
-    color: rgb(71, 70, 70);
+    color: rgb(71,70,70);
 }
 #icons ul a{
     display: inline-flex;
     text-decoration: none;
     color:rgb(24, 22, 22);
+    margin-left: 0px;
 }
 #icons ul a :hover{
     color: red;
