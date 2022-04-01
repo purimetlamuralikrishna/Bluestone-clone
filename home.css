@@ -1,69 +1,219 @@
 body{
     background-color: rgb(244,244,244);
 }
-.main-menu{
+*{
+    font-family: 'muli' Arial sans-serif;
+}
+
+/* Navbar start */
+
+.navbar{
     background-color: rgb(0,30,56);
-    text-align:center;
-    width: 100%;
     position: sticky;
     top: 0px;
     z-index: 1;
-}
-
-.main-menu ul{
-    display: inline-flex;
-}
-
-li{
-   padding: 5px 15px 0px 15px;
-   list-style-type: none;
-}
-
-a{
-    color: rgb(255,255,255);
-    text-decoration: none;
-}
-
-.head{
     text-align: center;
+    padding: 14px;
 }
-.ring-types{
-    display: flex;  
+.navbar>a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+    padding: 10px;
+    font-family: 'muli' Arial sans-serif;
+    font-size: 14px;
 }
-.ring-types>div{
-    margin-left: 10px;
-}
-.ring1,.ring3{
-    background-color: white;
-}
-hr{
-    border: 1px dashed wheat;
-}
-.ring-data{
-    display: flex;
-    z-index: 1;
-    position: absolute;
-    left: 0;
-}
-.ring-data>div{
-    padding: 20px;
-}
-.div-imgs{
-display: grid;
-grid-template-rows: repeat(3,1fr);
-}
-.price-range{
-    text-align: left;
-}
-.Metals-Stones{
-    text-align: left;
-}
-.ring-data{
+
+
+
+.ring-drop{
     display: none;
 }
-#ring :hover .ring-data{
-    display: block
+.rings:hover+.ring-drop{
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    z-index: 1;
 }
+.ring-drop:hover {
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    z-index: 1;
+}
+.earrings-drop{
+    display: none;
+}
+.earrings:hover+.earrings-drop{
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    z-index: 1;
+}
+.earrings-drop:hover {
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    z-index: 1;
+}
+
+.pendants-drop{
+    display: none;
+}
+.pendants:hover+.pendants-drop{
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    z-index: 1;
+}
+.pendants-drop:hover {
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    z-index: 1;
+}
+
+.solitaries-drop{
+    display: none;
+}
+.solitaries:hover+.solitaries-drop{
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    z-index: 1;
+}
+.solitaries-drop:hover {
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    z-index: 1;
+}
+
+
+.All-drop{
+    display: none;
+}
+.all-jewellerys:hover+.All-drop{
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    z-index: 1;
+}
+.All-drop:hover {
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    z-index: 1;
+}
+
+.gifts-drop{
+    display: none;
+}
+.gifts:hover+.gifts-drop{
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 90%;
+    z-index: 1;
+}
+.gifts-drop:hover {
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 90%;
+    z-index: 1;
+}
+
+.coins-drop{
+    display: none;
+}
+.coins:hover+.coins-drop{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    z-index: 1;
+}
+.coins-drop:hover {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    z-index: 1;
+}
+
+.next-day-drop{
+    display: none;
+}
+.next-day:hover+.next-day-drop{
+    display: block;
+    position: absolute;
+    left: 70%;
+    top: 90%;
+    z-index: 1;
+}
+.next-day-drop:hover {
+    display: block;
+    position: absolute;
+    left: 70%;
+    top: 90%;
+    z-index: 1;
+}
+
+.ring-drop-container{
+    display: flex;
+}
+.ring-drop-container>div{
+    padding: 10px;
+}
+.ring-drop-container>div:nth-child(even){
+    background-color: rgb(244,244,244);
+}
+.ring-drop-container>div:nth-child(odd){
+    background-color: rgb(255,255,255);
+}
+.ring-drop-container a{
+    text-decoration: none;
+}
+.ring-drop-container a:hover{
+    color:red
+}
+.heading+hr+div{
+    display: flex;
+}
+.heading+hr+div div{
+    text-align: left;
+}
+.ring-types button{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+li{
+    list-style-type: none;
+    text-align: left;
+}
+.ads{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 20px;
+    padding-top: 25px;
+}
+.ads img{
+    padding: 10px;
+}
+
+/* Navbar End */
+
 #top-logo{
     width: 20%;
     box-sizing: border-box;
@@ -76,10 +226,12 @@ grid-template-rows: repeat(3,1fr);
 }
 #top{
     display: flex;
-    margin-top: 0px;
+    margin-top: 0%;
+    padding-top: 10px;
     align-items: center;
     justify-content:space-evenly;
     width: 100%;
+    background-color: rgb(255,255,255);
 
 }
 #search{
@@ -114,7 +266,6 @@ grid-template-rows: repeat(3,1fr);
     padding-left: 20px;
 }
 #LS{
-    /* text-align: center; */
     margin-top: 0px;
 }
 #LS ul{
@@ -368,7 +519,7 @@ span{
 .slide1>img{
 border-radius: 50%;
 width: 20%;
-height: 20%;
+height: 30%;
 position: absolute;
 top: -10%;
 left: 40%;
@@ -491,6 +642,7 @@ color: aliceblue;
 #followus{
     background-color: rgb(255,255,255);
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #follow{
