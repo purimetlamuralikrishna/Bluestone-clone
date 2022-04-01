@@ -41,8 +41,8 @@
                                     </div>
                                     <div style="text-align:right;padding:10px;">
                                         <p style="margin-bottom:-3px;">
-                                            <span class="old-price"><strike><i class="fa-solid fa-indian-rupee-sign"></i>54,802</strike></span>
-                                            <span class="new-price"><i class="fa-solid fa-indian-rupee-sign"></i>50,002</span>
+                                            <span class="old-price"><strike><i class="fa-solid fa-indian-rupee-sign"></i></strike>52794</span>
+                                            <span class="new-price"><i class="fa-solid fa-indian-rupee-sign"></i>47994</span>
                                         </p>
                                         <p class="offer-info-block">
                                             (25% off on diamond price) </p>
@@ -148,13 +148,13 @@
                 <div id="place_order1">
                     <h2 id="nt-title">Order Summary</h2>
                     <div class="payment-summery">
-                        <span>Total (1 item)</span><span><i class="fa-solid fa-indian-rupee-sign"></i> 47,994</span>
+                        <span>Total (1 item)</span><span><i class="fa-solid fa-indian-rupee-sign"></i> 47994</span>
                     </div>
                     <div class="payment-summery">
-                        <span>Total Payable</span><span><i class="fa-solid fa-indian-rupee-sign"></i> 47,994</span>
+                        <span>Total Payable</span><span><i class="fa-solid fa-indian-rupee-sign"></i> 47994</span>
                     </div>
                     <div class="payment-summery">
-                        <span>You Save <i class="fa-solid fa-indian-rupee-sign"></i> 4,800</span>
+                        <span>You Save <i class="fa-solid fa-indian-rupee-sign"></i> 4800</span>
                     </div>
                     <div class="payment-summery">
                         <span>Gift Message<br>(optional)</span><span><i class="fa-solid fa-gift"></i> <a href='#'>Add</a></span>
@@ -234,8 +234,13 @@
    
     function changingSize(){
         var  value = Number(document.querySelector('#select-opt').value);
-        var text = Number(document.querySelector(".new-price").innerText);
-        var new_value =text*value;
-        var text1 = document.querySelector(".old-price").innerText;
+        var text = Number(document.querySelector(".new-price").innerText); 
+        var text1 = Number(document.querySelector(".old-price").innerText);
+        console.log(text1);
+        var new_value =text1*value;
+        console.log(new_value,value);
+        var pre = (new_value*25)/100;
+        console.log(pre);
+        console.log(new_value-pre)
     }
 </script>
