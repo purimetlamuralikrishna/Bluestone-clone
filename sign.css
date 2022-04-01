@@ -17,6 +17,7 @@
                 transform 20ms ease-in-out 0ms;
     font-family: 'Mulish', sans-serif;
     border-radius: 15px;
+    z-index: 1;
 }
 .container.active{
     top: 50%;
@@ -76,6 +77,12 @@ button{
     color: white;
     font-family: 'Mulish', sans-serif;
     cursor: pointer;
+  
+}
+#btno{
+    position: absolute;
+    left: 25%;
+    background-color: skyblue;
 }
 p{
     margin-left: 50%;
