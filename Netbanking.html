@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#box1{
+display: flex;
+height: 80px;
+width: 100%;
+box-shadow: 10px 5px 5px rgb(224, 216, 216);
+}
+#box2 >img{
+height: 80px;
+width: 50%;
+}
+#box3{
+display: flex;
+height: 590px;
+width: 100;
+}
+#box4{
+height: 590px;
+width: 66%;
+border: 1px solid rgb(236, 231, 231);
+
+}
+#box5{
+height: 590px;
+width: 37%;
+border: 1px solid;
+}
+#box4>p{
+    margin-left: 100px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#box4>div{
+height: 500px;
+width: 85%;
+border: 1px solid white;
+margin-left: 100px;
+display: flex;
+}
+#box6{
+    height: 300px;
+    width: 35%;
+    
+}
+#box7{
+height: 500px;
+width: 80%;
+
+}
+#box6>div{
+height: 70px;
+width: 100%;
+border: 1px solid white;
+
+}
+#box6>div>button{
+margin: 0px ;
+font-family: Arial, Helvetica, sans-serif;
+height: 70px;
+width: 100%;
+border: 0px solid;
+background-color: white;
+}
+#box6>div>button:active {
+ background-color: rgb(228, 224, 224);
+ 
+}
+#box8{
+    height: 120px;
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#box8>div{
+height: 60px;
+width: 100%;
+margin: auto;
+}
+#box9, #box10{
+display: flex;
+}
+#box9>button{
+height: 60px;
+width: 33%;
+border: 1px solid white;
+
+}
+#box10>button{
+height:60px;
+width: 33%;
+border: 1px solid white;
+
+
+}
+
+#btn1{
+    margin-left: 20px;
+    height: 60px;
+    width: 90%; 
+    padding: 20px 30px 20px 30px;
+    color: white;
+    background-color: rgb(230, 66, 66);
+    border: 0px solid;
+    box-shadow: 4px 4px 4px 4px rgb(241, 231, 231);
+}
+#btn1:hover{
+background-color: rgb(245, 8, 8);
+}
+#select>option:hover{
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#select{
+height: 60px;
+width: 90%;
+margin-left: 19px;
+margin-bottom: 10px;
+
+
+
+}
+
+
+</style>
+
+
+<body>
+    <div id = "box1">
+        <div id = "box2">
+            <img src = "https://kinclimg4.bluestone.com/f_webp/static/resources/themes/bluestone/images/new/logo-blue-2x.v2.png"/>
+        </div>
+        </div>
+        <br>
+        <div id = "box3">
+            <div id = "box4">
+                <p>Choose a Payment Method</p>
+                <div>
+                    <div id = "box6">
+                        <div>
+                            <button id = "btn2">Credit card</button>
+                        </div>
+                        <div> 
+                            <button id = "btn3">Debit Card</button>
+                        </div>
+                        <div>
+                            <button id = "btn4">Netbanking</button>
+                        </div>
+                        <div>
+                            <button id = "btn5">Cash On Delivery</button>
+                        </div>
+                    </div>
+                    <div id = "box7">
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin: 25px;">Select Your Bank</p>
+                        <hr width=90%>
+                        <form>
+                        <div id = "box8">
+                            <div id = "box9">
+                                <button id = "btn6"> <img src = "https://kinclimg4.bluestone.com/f_webp/static/resources/themes/bluestone/images/bank/icici-bank.v1.png"/></button>
+                                <button id = "btn7"><img src = "https://kinclimg8.bluestone.com/f_webp/static/resources/themes/bluestone/images/bank/hdfc-bank.v1.png"/></button>
+                                <button id = "btn8"> <img src = "https://kinclimg0.bluestone.com/f_webp/static/resources/themes/bluestone/images/bank/citi-bank.v1.png"/></button>
+                            </div>
+                            <div id = "box10">
+                                <button id = "btn9"><img src = "https://kinclimg6.bluestone.com/f_webp/static/resources/themes/bluestone/images/bank/state-bank-of-india.v1.png"/></button>
+                                <button id = "btn10"> <img src = "https://kinclimg8.bluestone.com/f_webp/static/resources/themes/bluestone/images/bank/axis-bank.v1.png"/></button>
+                                <button id = "btn11"><img src = "https://kinclimg4.bluestone.com/f_webp/static/resources/themes/bluestone/images/bank/yes-bank.v1.png"/></button>
+                            </div>
+                        </div>
+                        <select id = "select">
+                            <option>Select Your bank</option>
+                            <option>Andhra Bank</option>
+                            <option>Canara Bank</option>
+                            <option>Catholic Syrian Bank</option>
+                            <option>Central Bank Of India</option>
+                            <option> DCB Bank</option>
+                            <option id = "opt1">ICICI Bank</option>
+                            <option id = "opt2" >HDFC Bank</option>
+                            <option id = "opt3">Citi Bank</option>
+                            <option>City Union Bank</option>
+                            <option>Cosmos Bank</option>
+                            <option id = "opt4">State Bank of India</option>
+                            <option id = "opt5">Axis Bank</option>
+                            <option>IDBI Bank</option>
+                            <option id = "opt6">YES Bank</option>
+                            <option>Bank of India</option>
+                            <option>Bank of Maharashtra</option>
+                            <option>Corporation Bank</option>
+                            <option>Airtel Payment Bank</option>
+                            <option>Deutsche Bank</option>
+                            <option>Development Credit bank</option>
+                            <option>Dhanlaxmi Bank</option>
+                            <option>Federal Bank</option>
+                            <option>Indian Bank</option>
+                            <option>Indian Overseas Bank</option>
+                            <option>IndusInd Bank</option>
+                            <option>ING Vysya Bank</option>
+                            <option>Jammu and Kashmir Bank</option>
+                            <option>Janata Sahakari Bank Pune</option>
+                            <option>Karnataka Bank Ltd</option>
+                            <option>Karur Mahindra Bank</option>
+                            <option>Kotak Mahindra Bank</option>
+                            <option>Lakshmi Vilas Bank Corporate</option>
+                            <option>Lakshmi Vilas Bank</option>
+                            <option>Punjab And Maharashtra Co-Operative Bank</option>
+                            <option>Punjab And Sindh Bank</option>
+                            <option>Punjab National Bank-Corporate</option>
+                            <option>Punjab Nation Bank</option>                          
+                            <option>Shamrao Vithal Co-Operative Bank</option>
+                            <option>Saraswat Bank</option>
+                            <option>State Bank of Jaipur and Bikaner</option>
+                            <option>State Bank Of Hyderbad</option>
+                            <option>State Bank Of Mysore</option>
+                            <option>Sate Bank Of Patiala</option>
+                            <option>State Bank Of Travankore</option>
+                            <option>South Indian Bank</option>
+                            <option>Syndicate Bank</option>
+                            <option>Tamilnad Mercantile Bank</option>
+                            <option>UCO Bank</option>
+                            <option>Union Bank Of India</option>
+                            <option>United Bank of India</option>
+                            <option>Vijaya Bank</option>
+
+
+
+                        </select>
+                        <div><p style="margin-left: 20px;" >Note: We will redirect you to your bank website to authorize the payment.</p></div>
+                        <input id = "btn1" type = "submit" value = "PROCEED TO PAY "/>
+                        </form>
+                    
+                    
+                    </div>
+                </div>
+
+
+            </div>
+            <div id = "box5"> 5</div>
+
+
+        </div>
+</body>
+</html>
+<script>
+document.querySelector("#btn2").addEventListener("click", Btn2Function);
+function Btn2Function(){
+    event.preventDefault();
+window.location.href= "payment.html"
+}
+document.querySelector("#btn3").addEventListener("click", Btn3Function);
+function Btn3Function(){
+    event.preventDefault();
+window.location.href= "debit.html"
+}
+document.querySelector("#btn4").addEventListener("click", Btn4Function);
+function Btn4Function(){
+    event.preventDefault();
+window.location.href= "Netbanking.html"
+}
+document.querySelector("#btn5").addEventListener("click", Btn5Function);
+function Btn5Function(){
+    event.preventDefault();
+window.location.href= "COD.html"
+}
+document.querySelector("#btn6").addEventListener("click", Btn6Function);
+function Btn6Function(){
+    event.preventDefault();
+    var opt1 =document.querySelector("#opt1").innerText
+    document.querySelector("#select").value = opt1;
+
+
+}
+document.querySelector("#btn7").addEventListener("click", Btn7Function);
+function Btn7Function(){
+    event.preventDefault();
+    var opt2 =document.querySelector("#opt2").innerText
+    document.querySelector("#select").value = opt2;
+
+
+}
+document.querySelector("#btn8").addEventListener("click", Btn8Function);
+function Btn8Function(){
+    event.preventDefault();
+    var opt3 =document.querySelector("#opt3").innerText
+    document.querySelector("#select").value = opt3;
+
+
+}
+document.querySelector("#btn9").addEventListener("click", Btn9Function);
+function Btn9Function(){
+    event.preventDefault();
+    var opt4 =document.querySelector("#opt4").innerText
+    document.querySelector("#select").value = opt4;
+
+
+}
+document.querySelector("#btn10").addEventListener("click", Btn10Function);
+function Btn10Function(){
+    event.preventDefault();
+    var opt5 =document.querySelector("#opt5").innerText
+    document.querySelector("#select").value = opt5;
+
+
+}
+document.querySelector("#btn11").addEventListener("click", Btn11Function);
+function Btn11Function(){
+    event.preventDefault();
+    var opt6 =document.querySelector("#opt6").innerText
+    document.querySelector("#select").value = opt6;
+
+
+
+}
+document.querySelector("form").addEventListener("submit", Btn1Function);
+function Btn1Function(){
+    event.preventDefault();
+ var bank = document.querySelector("#select").value;
+ if(bank == "Axis Bank"){
+     window.location.href= "https://retail.axisbank.co.in/wps/portal/rBanking/axisebanking/AxisGenOnlinePwd?_ga=2.100142936.77200416.1648690254-1602966709.1648690254";
+
+    
+ }
+ if(bank == "ICICI Bank"){
+     window.location.href= "https://infinity.icicibank.com/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=ICI";
+ 
+}
+if(bank == "Andhra Bank"){
+     window.location.href= "https://www.unionbankonline.co.in/";
+}
+
+if(bank == "Canara Bank"){
+     window.location.href= "https://www.canmoneyonline.com/STSB/Login.aspx";
+}     
+     if(bank == "Central Bank Of India"){
+     window.location.href= "https://www.centralbankofindia.co.in/en";
+     }
+     if(bank == "DCB Bank"){
+     window.location.href= "https://www.dcbbank.com/dcb-saving-account";
+     }
+     if(bank == "HDFC Bank"){
+     
+        window.location.href= "https://netbanking.hdfcbank.com/netbanking/";
+     }
+        if(bank == "Citi Bank"){
+     
+            window.location.href= "https://www.citibank.co.in/ibank/login/IQPin1.jsp?dOfferCode=PAYCCBILL";
+        }
+            if(bank == "State Bank of India"){
+     window.location.href= "https://retail.onlinesbi.com/retail/login.htm";
+            }
+    
+    
+     if(bank == "YES Bank"){
+     window.location.href= "https://www.yesbank.in/";
+     }
+    
+    
+     if(bank == "IDBI Bank"){
+     window.location.href= "https://www.idbibank.in/apply-now.aspx";
+     }
+    
+    
+     if(bank == "Bank of India"){
+     window.location.href= "https://www.bankofindia.co.in/";
+     }
+    
+    
+     if(bank == "Bank of Maharashtra"){
+     window.location.href= "https://bankofmaharashtra.in/internet_banking";
+    
+     }
+    
+    
+     if(bank == "Punjab Nation Bank"){
+     window.location.href= "https://pnbibanking.in/";
+   
+     }
+   
+   
+     
+     if(bank == "City Union Bank"){
+     window.location.href= "https://www.cityunionbank.com/login";
+    
+     }
+    
+     if(bank == "Kotak Mahindra Bank"){
+     window.location.href= "https://www.kotak.com/811-savingsaccount-ZeroBalanceAccount/811/ahome2.action?Source=GoogleSEM&banner=sok-kotak-811-search-brand-bank_account-desktop_select-loc_exact&pubild=kotak%20mahindra%20bank&gclid=Cj0KCQjw_4-SBhCgARIsAAlegrVy80DVoZi4kVTSOo9pS4nm5qKPagP6qz73LdRUWJ-T1W5bELauJBsaAs5EEALw_wcB&gclsrc=aw.ds";
+    
+     }
+    
+    
+     if(bank == "Indian Bank"){
+     window.location.href= "https://www.indianbank.net.in/jsp/startIB.jsp";
+
+     }
+
+
+
+
+
+
+
+
+
+}
+</script>
+
+

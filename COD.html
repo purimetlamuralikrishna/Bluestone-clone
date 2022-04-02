@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#box1{
+display: flex;
+height: 80px;
+width: 100%;
+box-shadow: 10px 5px 5px rgb(224, 216, 216);
+}
+#box2 >img{
+height: 80px;
+width: 50%;
+}
+#box3{
+display: flex;
+height: 590px;
+width: 100;
+}
+#box4{
+height: 590px;
+width: 66%;
+border: 1px solid rgb(248, 237, 237);
+
+}
+#box5{
+height: 590px;
+width: 37%;
+border: 1px solid;
+}
+#box4>p{
+    margin-left: 100px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#box4>div{
+height: 500px;
+width: 85%;
+border: 1px solid white
+;
+margin-left: 100px;
+display: flex;
+}
+#box6{
+    height: 300px;
+    width: 35%;
+    
+}
+#box7{
+height: 500px;
+width: 80%;
+border: 1px solid white;
+
+}
+#box7>div{
+height: 80px;
+width: 90%;
+background-color: beige;
+border: 1px solid beige;
+margin-left: 25px;
+
+
+}
+#box6>div{
+height: 70px;
+width: 100%;
+border: 1px solid white;
+
+}
+#box6>div>button{
+margin: 0px ;
+font-family: Arial, Helvetica, sans-serif;
+height: 70px;
+width: 100%;
+border: 0px solid;
+background-color: white;
+}
+#box6>div>button:active {
+ background-color: rgb(228, 224, 224);
+ 
+}
+
+
+#btn6{
+    height: 55px;
+    width: 18%;
+    background-color: rgb(236, 115, 115);
+    box-shadow: 4px 4px 4px 4px rgb(241, 231, 231);
+    border: 0px solid;
+}
+#btn6:hover{
+    background-color: red;
+}
+</style>
+
+
+<body>
+    <div id = "box1">
+        <div id = "box2">
+            <img src = "https://kinclimg4.bluestone.com/f_webp/static/resources/themes/bluestone/images/new/logo-blue-2x.v2.png"/>
+        </div>
+        </div>
+        <br>
+        <div id = "box3">
+            <div id = "box4">
+                <p>Choose a Payment Method</p>
+                <div>
+                    <div id = "box6">
+                        <div>
+                            <button id = "btn2">Credit card</button>
+                        </div>
+                        <div> 
+                            <button id = "btn3">Debit Card</button>
+                        </div>
+                        <div>
+                            <button id = "btn4">Netbanking</button>
+                        </div>
+                        <div>
+                            <button id = "btn5">Cash On Delivery</button>
+                        </div>
+                    </div>
+                    <div id = "box7">
+                        <div>
+                            <p id = "para" style="font-family: Arial, Helvetica, sans-serif;margin: 25px;">Cash On Delivery(COD) option is available for your location only for order amount upto Rs 1,00,000</p>
+                        </div>
+                        <p style="margin-left: 26px; font-family: Arial, Helvetica, sans-serif; color: gray;">Check for Cash on Delivery availibility</p>
+                        
+                        <form>
+                       <input id = "value" style="height: 50px; width: 70%; margin-left: 25px;" type = "number" placeholder="Enter your pincode"/> <span><button id = "btn6" >CHECK</button></span>
+                        </form>
+                        
+                    
+                    </div>
+                </div>
+
+
+            </div>
+            <div id = "box5"> 5</div>
+
+
+        </div>
+</body>
+</html>
+<script>
+document.querySelector("#btn2").addEventListener("click", Btn2Function);
+function Btn2Function(){
+window.location.href= "payment.html"
+}
+document.querySelector("#btn3").addEventListener("click", Btn3Function);
+function Btn3Function(){
+window.location.href= "debit.html"
+}
+document.querySelector("#btn4").addEventListener("click", Btn4Function);
+function Btn4Function(){
+window.location.href= "Netbanking.html"
+}
+document.querySelector("#btn5").addEventListener("click", Btn5Function);
+function Btn5Function(){
+window.location.href= "COD.html"
+}
+document.querySelector("#btn6").addEventListener("click", Btn6Function);
+function Btn6Function(){
+    event.preventDefault();
+    var val = document.querySelector("#value").value;
+    var num = +(val);
+    
+
+if(num == 0 || num < 0 || num >999999 || num<100000){
+    document.querySelector("#para").innerText = "We are sorry, we do not deliver to this pincode try another pincode";
+
+}
+if(num<=999999 && num >= 100000){
+    document.querySelector("#para").innerText = "The delivery is available on this pincode";
+}
+}
+</script>
+
+
