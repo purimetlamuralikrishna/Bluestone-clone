@@ -1,0 +1,246 @@
+<html>
+    <head>
+        <title>Cart Details</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="product.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/d1fbb1b7a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div style='display:flex;flex-direction:column;gap:20px;'>
+            <section id="navbar_cart">
+                <div>
+                    <img src="https://kinclimg4.bluestone.com/f_webp/static/resources/themes/bluestone/images/new/logo-blue-2x.v2.png" alt='logo' width="200px">
+                </div>
+                <div>
+                    <img style="padding-right:50px;" src="logo.png" alt="logo" height="50px" width="450px">
+                </div>
+                <div>
+                    <span>Login</span><span><i class="fa-duotone fa-lock-keyhole"></i>100% SECURE</span>
+                </div>
+            </section>
+            <section id="details_of_cart">
+                <div id="add_to_cart_product">
+                    <h1 id="nc-title">My Shopping Cart (1 Item)</h1>
+                    <div id="ring_details_remove">
+                        <div>
+                            <img src='https://kinclimg1.bluestone.com/f_webp,c_scale,w_220,b_rgb:f0f0f0/giproduct/BIAB0503R04_YAA18DIG6XXXXXXXX_ABCD00-PICS-00001-1024-42031.png' alt="ring_image">
+                        </div>
+
+                        <div id="first_box">
+                            <div style="border:1px solid #f7f7f7;">
+                                <div>
+                                    <div class="product-title"><a target="_blank" href="#" title="The Aaniya Ring">The Aaniya Ring</a>
+                                        <span class="product-code">Product Code: 053649-15146647</span>
+                                    </div>
+                                    <div style="text-align:right;padding:10px;">
+                                        <p style="margin-bottom:-3px;">
+                                            <span class="old-price"><strike><i class="fa-solid fa-indian-rupee-sign"></i></strike>52794</span>
+                                            <span class="new-price"><i class="fa-solid fa-indian-rupee-sign"></i>47994</span>
+                                        </p>
+                                        <p class="offer-info-block">
+                                            (25% off on diamond price) </p>
+                                    </div>
+                                </div>
+                                <div class="make_ring_size" style="margin-top:15px;">
+                                    <div class="first-divs">
+                                        Ring Size
+                                    </div>
+                                    <div class="make_ring_size">
+                                        <div style="width:150px;padding:7px;"> 
+                                            
+                                            <div class="select-box">
+                                                
+                                                <div class="options-container">
+                                                    
+                                                    <div class="option">
+                                                        <input type="radio" class="radio" id="size" name="catogery"/>
+                                                        <label for="ring">3</label>
+                                                    </div>
+                                                    <div class="option">
+                                                        <input type="radio" class="radio" id="size1" name="catogery"/>
+                                                        <label for="ring1">4</label>
+                                                    </div>
+                                                    <div class="option">
+                                                        <input type="radio" class="radio" id="size2" name="catogery"/>
+                                                        <label for="ring2">5</label>
+                                                    </div>
+                                                    <div class="option">
+                                                        <input type="radio" class="radio" id="size" name="catogery"/>
+                                                        <label for="ring">6</label>
+                                                    </div>
+                                                    <div class="option">
+                                                        <input type="radio" class="radio" id="size" name="catogery"/>
+                                                        <label for="ring">7</label>
+                                                    </div>
+                                                    <div class="option">
+                                                        <input type="radio" class="radio" id="size" name="catogery"/>
+                                                        <label for="ring">8</label>
+                                                    </div>
+                                                    <div class="option">
+                                                        <input type="radio" class="radio" id="size" name="catogery"/>
+                                                        <label for="ring">9</label>
+                                                    </div>
+                                                    <div class="option">
+                                                        <input type="radio" class="radio" id="size" name="catogery"/>
+                                                        <label for="ring">10</label>
+                                                    </div>
+                                                    <div class="option">
+                                                        <input type="radio" class="radio" id="size" name="catogery"/>
+                                                        <label for="ring">11</label>
+                                                    </div>
+                                                    <div class="option">
+                                                        <input type="radio" class="radio" id="size" name="catogery"/>
+                                                        <label for="ring">12</label>
+                                                    </div>
+                                                </div>
+                                                <div style="padding-top:5px;" class="selected">
+                                                    <span style="float:left">12</span><span style="float:right"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style='padding-top:10px;'>
+                                            <span>Quantity</span>
+                                            <select id='select-opt' onchange='changingSize()' style='padding-bottom:10px;'>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="make_ring_size">
+                                    <div class="metal-part">
+                                        Metal
+                                    </div>
+                                    <div class="data-part"> 18Kt Gold, 6.12 gram</div>
+                                </div>
+                                <div class="make_ring_size">
+                                    <div class="metal-part">
+                                        Stone
+                                    </div>
+                                    <div class="data-part"> 22 Diamond, 0.1900 Carat SI Ij</div>
+                                </div>
+                            </div>
+                            <div class="make_ring_size choice-to">
+                                <div>Remove</div>
+                                <div>Move To Wishlist (<span><a href='#'>need to login first</a></span>)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="insurance-money">
+                        <div><span><i class="fa-solid fa-circle-check"></i> 30-Day Money back</span></div>
+                        <div><span><i class="fa-solid fa-circle-check"></i> Eligible for Lifetime exchange & Buy back</span></div>
+                        <div><span><i class="fa-solid fa-circle-check"></i> Free & Insured Delievery</span></div>
+                    </div>
+                </div>
+                <div id="place_order1">
+                    <h2 id="nt-title">Order Summary</h2>
+                    <div class="payment-summery">
+                        <span>Total (1 item)</span><span><i class="fa-solid fa-indian-rupee-sign"></i> 47994</span>
+                    </div>
+                    <div class="payment-summery">
+                        <span>Total Payable</span><span><i class="fa-solid fa-indian-rupee-sign"></i> 47994</span>
+                    </div>
+                    <div class="payment-summery">
+                        <span>You Save <i class="fa-solid fa-indian-rupee-sign"></i> 4800</span>
+                    </div>
+                    <div class="payment-summery">
+                        <span>Gift Message<br>(optional)</span><span><i class="fa-solid fa-gift"></i> <a href='#'>Add</a></span>
+                    </div>
+                    <div id="btns1">
+                        <button>PLACE ORDER</button>
+                    </div>
+                    <p>I have a voucher code / gift card</p>
+                    <p id="chat_us">Any Questions?<br>Please call us at <b>1800-419-0066</b> or <a href="#">Chat with us</a></p>
+                </div>
+            </section>
+            <section style="width:100%;margin-top:13%;display:flex;flex-direction:row;height:180px;justify-content:space-around;background-color:#f7f7f7;opacity:1px;z-index:0">
+                <div id="footer-place-order">
+                    <div>
+                        <div id="image">
+                            <img src="ratan.png">
+                        </div>
+                        <div>
+                            <p>India's Largest Online Jewellerry store</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw0tY-OGWWdu5BYk45mYY33eKuhJHyjoEkDQ&usqp=CAU">
+                        </div>
+                        <div>
+                            <p>Trusted & Promoted By Legends</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="font-size:40px;width:50px;height:50px;padding:5px;text-align:center;padding-left:5px;margin-left:50px;">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                        </div>
+                        <div>
+                            <p>
+                                Transparent pricing
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="image">
+                            <img src="https://reliancejewels.net//html/html/img/services-benefits/03.png" alt="">
+                        </div>
+                        <div>
+                            <p>100% certified jewellery</p>
+                        </div>
+                    </div>
+                </div>
+                <div style='font-size:40px;display:flex;flex-direction:row;padding-top:50px;opacity:-1px;'>
+                    <div>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-cc-mastercard"></i></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-cc-amazon-pay"></i>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+<script>
+    function dropdown(){
+        document.querySelector('.shows').style.display='none';
+        document.querySelector('hide1').style.display='block';
+    }
+    function dropdown2(){
+        document.querySelector('.shows').style.display='block';
+        document.querySelector('hide1').style.display='none';
+    }
+   
+    function changingSize(){
+        var  value = Number(document.querySelector('#select-opt').value);
+        var text = Number(document.querySelector(".new-price").innerText); 
+        var text1 = Number(document.querySelector(".old-price").innerText);
+        console.log(text1);
+        var new_value =text1*value;
+        console.log(new_value,value);
+        var pre = (new_value*25)/100;
+        console.log(pre);
+        console.log(new_value-pre)
+    }
+</script>
