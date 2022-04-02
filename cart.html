@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<style>
+#box1{
+    height: 700px;
+    width: 100%;
+}
+#box2{
+height: 80px;
+width: 100%;
+box-shadow: 1px 1px 1px 1px rgb(247, 243, 243);
+}
+
+#box2>img{
+height: 80px;
+width: 12%;
+}
+#box3{
+display: flex;
+height: 630px;
+width: 100%;
+margin-top: 0px;
+
+}
+#box4{
+height: 630px;
+width: 60%;
+box-shadow: 1px 1px 1px 1px rgb(247, 243, 243) ;
+}
+
+#box5{
+height: 630px;
+width: 40%;
+margin-left: 40px;
+box-shadow: 5px 5px 5px 5px rgb(247, 243, 243) ;
+}
+h3{
+    margin-top: 0px;
+margin-left: 100px;
+}
+.box6{
+ display: flex;
+ width: 77%;
+ height: 40px;
+ margin-left: 100px;
+ margin-bottom: 10px;
+}
+.inp1{
+height: 40px;
+width: 170%;
+border: 1px solid;
+
+}
+.inp2{
+height: 40px;
+width: 100%;
+border: 1px solid;
+margin-left: 150px;
+}
+#inp1:hover{
+background-color: rgb(236, 231, 231);
+
+
+}
+p{
+color: gray; 
+margin-left: 100px;
+}
+.inp3{
+height: 40px;
+width: 72.9%;
+border: 1px solid;
+margin-left: 100px;
+margin-bottom: 10px;
+}
+#btn1{
+height: 40px;
+width: 50%;
+background-color: red;
+color: white;
+margin-left: 150px;
+}
+#box7{
+height: 40px;
+width: 78%;
+background-color: rgb(214, 214, 238);
+display: flex;
+margin-top: 20px;
+margin-left: 65px;
+justify-content: space-between;
+}
+#box7>div{
+height: 60px;
+width: 31%;
+}
+#opt1{
+    height: 40px;
+    width: 65%;
+    border: 0px solid;
+}
+#box8>img{
+height: 30px;
+width: 30%;
+
+}
+.box9{
+height: 40px;
+width: 77%;
+display: flex;
+margin: auto;
+margin-bottom: 20px;
+justify-content: space-between;
+
+}
+.box9>div{
+    height: 40px;
+    width: 45%;
+    border: 1px solid;
+    padding: 10px 1px 1px 10px ;
+    
+}
+
+
+
+</style>
+
+
+
+<body>
+    <div id = "box1">
+        <div id = "box2">
+            <img src = "https://kinclimg4.bluestone.com/f_webp/static/resources/themes/bluestone/images/new/logo-blue-2x.v2.png"/>
+        </div>
+        <form>
+        <div id = "box3" >
+            <div id = "box4">
+                
+                <h3>Your Details</h3>
+                <hr  style="width: 77%; margin-top: 0px;">
+                <p>Required to Save Cart and Send Order Updates</p>
+                <div class = "box6">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="inp1" type = "email" placeholder="Email address">
+                    </div>
+                    <div>
+                        <input class ="inp2" type = "number" placeholder="Mobile number">
+                    </div>
+                </div>
+                <p>Would you like to receive notifications on WhatsApp?</p>
+                <input class = "inp3" type = "number" placeholder = "WhatsApp Number (Optional)"\>
+                <h3>Delivery Details</h3>
+                <hr style="width: 77%;">
+                <p>We will deliver the order at the below address</p>
+                <input class = "inp3 recep" type = "text" placeholder = "Recipient's Name"\>
+                <div class = "box6">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="inp1 recepno" type = "number" placeholder="Recipient's mobile(optional">
+                    </div>
+                    <div>
+                        <input class ="inp2 pin" type = "number" placeholder="Pincode">
+                    </div>
+                </div>
+                <div class = "box6">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="inp1 house" type = "text" placeholder="Apartment/House/Flate No.">
+                    </div>
+                    <div>
+                        <input class ="inp2 street" type = "text" placeholder="Street/Colony/Area Name">
+                    </div>
+                </div>
+                <div class = "box6">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="inp1 locality " type = "text" placeholder="Locality / Town">
+                    </div>
+                    <div>
+                        <input class ="inp2 landmark" type = "text" placeholder="Landmark (Optional)">
+                    </div>
+                </div>
+                <div class = "box6">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="inp1 city " type = "text" placeholder="City / District">
+                    </div>
+                    <div>
+                        <input class ="inp2 state" type = "text" placeholder="State">
+                    </div>
+                </div>
+                <input class = "inp3 GST " type = "text" placeholder = "GST Number (Optional)"\>
+                
+                
+
+
+
+
+
+
+            </div>
+            <div id = "box5">
+                <div id = "box7">
+                    
+                    <div id = "box8" ><img src = "https://cdn.pixabay.com/photo/2020/09/14/20/39/vans-5572117__340.png"/></i></div>
+                    <div>Estimated delivery date </div>
+                    <div><select id = "opt1">
+                        <option>View</option>
+                        <option></option>
+                    </select></div>
+                </div>
+                <p id =  "para">Man </p>
+                <hr style="width: 77%;">
+                <div class = "box9">
+                    <div>ORDER SUMMARY</div>
+                    <div>View Details</div>
+                </div>
+                <div class = "box9">
+                    <div>Total items</div>
+                    <div>Price</div>
+                </div>
+                <div class = "box9">
+                    <div>Total Payable</div>
+                    <div>Amount</div>
+                </div>
+                <input id = "btn1" type = "submit" value = "PROCEED TO PAYMENT"\>
+
+
+
+            </div>
+            
+        </div>
+
+        </form>
+        </div>
+
+
+
+</body>
+</html>
+<script>
+    var cardArr =[];
+    document.querySelector("form").addEventListener("submit", MyFunction);
+    function MyFunction(){
+        event.preventDefault();
+        window.location.href = "payment.html"
+       
+    var email = document.querySelector(".inp1").value;
+    var mobnumber = document.querySelector(".inp2").value;
+    var whano = document.querySelector(".inp3").value;
+    var reciname = document.querySelector(".recep").value;
+    var recino = document.querySelector(".recepno").value;
+    var pincode = document.querySelector(".pin").value;
+    var hous = document.querySelector(".house").value;
+    var street = document.querySelector(".street").value;
+    var loca = document.querySelector(".locality").value;
+    var landma = document.querySelector(".landmark").value;
+    var city = document.querySelector(".city").value;
+    var state = document.querySelector(".state").value;
+
+    var AddObj= {
+        emailitem: email,
+        mobitem : mobnumber,
+        whanoitem : whano,
+        reciitem : reciname,
+        recitem : recino,
+        pinitem : pincode,
+        houitem : hous,
+        streeitem : street,
+        locaitem : loca,
+        landmaitem : landma,
+        cityitem : city,
+        stateitem : state
+    };
+    cardArr.push(AddObj);
+    localStorage.setItem("cartdetail", JSON.stringify(cardArr));
+
+
+    }
+</script>
