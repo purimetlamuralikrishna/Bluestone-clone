@@ -10,7 +10,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/d1fbb1b7a8.js" crossorigin="anonymous"></script>
-        <link rel='stylesheet' href="shoppingbag.css">
+        <link rel='stylesheet' href="shoppinbag.css">
         <link rel="stylesheet" href="home.css">
     </head>
     <body>
@@ -751,7 +751,7 @@
                         </div>
                         <div id="submission">
                             <div>
-                                <input id="buyNow" type="submit" value="Buy Now">
+                                <input onclick="payment()" id="buyNow" type="submit" value="Buy Now">
                             </div>
                             <div>
                                 <a id='monthlyPlan' href="">10+1 monthly plan</a>
@@ -1067,5 +1067,8 @@
     function hide(){
         document.querySelector('#hiding').style.display='none';
         document.querySelector('.shows').style.display='block';
+    }
+    function payment(){
+        window.location.href="http://127.0.0.1:5500/bluestoneproject/Blue-stone-clone/product.html"
     }
 </script>

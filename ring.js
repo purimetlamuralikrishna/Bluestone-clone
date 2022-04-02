@@ -281,7 +281,7 @@ ringData_1.map(function(elem){
     
     function viewDetails(elem){
        ringDetails.push(elem);
-       window.location.href="nextpage.html"
+       window.location.href="shoppinbag.html"
        localStorage.setItem("viewData",JSON.stringify(ringDetails));
     }
    

@@ -19,7 +19,7 @@
                     <img src="https://kinclimg4.bluestone.com/f_webp/static/resources/themes/bluestone/images/new/logo-blue-2x.v2.png" alt='logo' width="200px">
                 </div>
                 <div>
-                    <img style="padding-right:50px;" src="logo.png" alt="logo" height="50px" width="450px">
+                    <img style="padding-right:50px;" src="https://i.ibb.co/t4XXbFb/logo.png" alt="logo" height="50px" width="450px">
                 </div>
                 <div>
                     <span>Login</span><span><i class="fa-duotone fa-lock-keyhole"></i>100% SECURE</span>
@@ -34,7 +34,7 @@
                         </div>
 
                         <div id="first_box">
-                            <div style="border:1px solid #f7f7f7;">
+                            <div style="border:1px solid #f7f7f7; width: 111%;">
                                 <div>
                                     <div class="product-title"><a target="_blank" href="#" title="The Aaniya Ring">The Aaniya Ring</a>
                                         <span class="product-code">Product Code: 053649-15146647</span>
@@ -135,7 +135,7 @@
                             </div>
                             <div class="make_ring_size choice-to">
                                 <div>Remove</div>
-                                <div>Move To Wishlist (<span><a href='#'>need to login first</a></span>)</div>
+                                <div>Move To Wishlist (<span><a href='sign.html'>need to login first</a></span>)</div>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                         <span>Gift Message<br>(optional)</span><span><i class="fa-solid fa-gift"></i> <a href='#'>Add</a></span>
                     </div>
                     <div id="btns1">
-                        <button>PLACE ORDER</button>
+                        <button onclick="paymentpage()"> PLACE ORDER</button>
                     </div>
                     <p>I have a voucher code / gift card</p>
                     <p id="chat_us">Any Questions?<br>Please call us at <b>1800-419-0066</b> or <a href="#">Chat with us</a></p>
@@ -170,7 +170,7 @@
                 <div id="footer-place-order">
                     <div>
                         <div id="image">
-                            <img src="ratan.png">
+                            <img src="https://i.ibb.co/3rjR1mr/ratan.png">
                         </div>
                         <div>
                             <p>India's Largest Online Jewellerry store</p>
@@ -242,5 +242,8 @@
         var pre = (new_value*25)/100;
         console.log(pre);
         console.log(new_value-pre)
+    }
+    function paymentpage(){
+        window.location.href="http://127.0.0.1:5500/bluestoneproject/Blue-stone-clone/cart.html"
     }
 </script>

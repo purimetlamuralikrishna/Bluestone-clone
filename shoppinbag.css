@@ -517,9 +517,9 @@ tr>td:nth-child(3){
 }
 #bluestone>div>p{
     color:red;
-    font-size:11px;
+    font-size:10px;
     text-transform:uppercase;
-    margin-top:10px;
+    margin-top:12px;
     margin-left:5px;
 }
 #part2{
@@ -639,4 +639,12 @@ hr{
 
 #footerpage{
     margin-top: 100%;
+}
+.fa-solid, .fa-regular {
+    font-size: 20px;
+    color: rgb(71,70,70);
+}
+.fa-indian-rupee-sign:before, .fa-indian-rupee:before, .fa-inr:before {
+    content: "\e1bc";
+    font-size: 13px;
 }
