@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+h1{
+color: white;
+background-color: green;
+margin-left: 10px;
+text-align: center;
+height: 60px;
+
+
+}
+h2{
+background-color: green;
+color: white;
+height: 60px;
+width: 50%;
+}
+h3{
+background-color: green;
+color: white;
+height: 60px;
+width: 50%;
+
+}
+#net{
+background-color: green;
+color: white;
+height: 60px;
+width: 50%;
+
+}
+img{
+margin-left: 600px;
+height: 200px;
+width: 20%;
+
+}
+
+
+</style>
+<body>
+    <img src = "https://content.presentermedia.com/files/clipart/00003000/3499/green_check_mark_button_800_wht.jpg"/>
+    <h1>PAYMENT SUCCESSFUL...!</h1>
+    <h2>Payment Type:  - <span>Net Banking </span> </h2>
+    <h3>Bank : - <span id = "bank"></span></h3>
+    <h3 id = "net">Email: - <span id = "email"></span></h3>
+
+    
+    
+</body>
+</html>
+<script>
+document.querySelector("h3").addEventListener("click", Bank1Function);
+function Bank1Function(){
+    event.preventDefault();
+    document.querySelector("#bank").innerText = "HDFC Bank";
+    document.querySelector("#bank").innerText.color = "yellow";
+}
+document.querySelector("#net").addEventListener("click", Bank2Function);
+function Bank2Function(){
+    event.preventDefault();
+    document.querySelector("#email").innerText = "amnkumar1234@gmail.com";
+}
+
+
+
+</script>

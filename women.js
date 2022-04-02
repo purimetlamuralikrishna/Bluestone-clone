@@ -247,10 +247,19 @@ ringData_1.map(function(elem){
     btn1.innerHTML = "TRY AT HOME FOR FREE";
     btn1.setAttribute("class","btn1");
 
-    btn1.addEventListener("click", function () {
-       alert("go to popup");
-     });
-
+    btn1.addEventListener("click", callfun);
+    function callfun(){
+        document.querySelector("#model").classList.add("active");
+    }
+   
+    document.querySelector("#bttns").addEventListener("click",removefun)
+      function removefun(){
+      document.querySelector("#model").classList.remove("active");
+      }
+    document.querySelector(".closebtn").addEventListener("click",closePopup);
+      function closePopup(){
+       document.querySelector("#model").classList.remove("active"); 
+       }
     var btn2 = document.createElement("button");
     btn2.innerHTML = "VIEW DETAILS >>";
     btn2.setAttribute("class","btn2")
@@ -323,9 +332,19 @@ ringData_2.map(function(elem){
     var btn1 = document.createElement("button");
     btn1.innerText = "TRY AT HOME FOR FREE";
     btn1.setAttribute("class","btn1");
-    btn1.addEventListener("click", function () {
-    alert("go to page");
-    });
+    btn1.addEventListener("click", callfun);
+    function callfun(){
+        document.querySelector("#model").classList.add("active");
+    }
+   
+    document.querySelector("#bttns").addEventListener("click",removefun)
+      function removefun(){
+      document.querySelector("#model").classList.remove("active");
+      }
+    document.querySelector(".closebtn").addEventListener("click",closePopup);
+      function closePopup(){
+       document.querySelector("#model").classList.remove("active"); 
+       }
 
     var btn2 = document.createElement("button");
     btn2.innerText = "VIEW DETAILS >>";
