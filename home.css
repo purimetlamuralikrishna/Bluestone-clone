@@ -896,7 +896,7 @@ padding-bottom: 5px;
     padding: 8px;
   }
 
-  .Social-Media-icon .fa-brands:hover,#mastercard .fa-brands:hover{
+  .Social-Media-icon .fa-brands:hover,#mastercard .fa-brands:hover,#mastercard .fa-solid:hover{
     color: white
   }
   #mastercard .fa-solid {
