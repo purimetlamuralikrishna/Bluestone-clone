@@ -1,0 +1,23 @@
+#Parent {
+  display: flex;
+  border-color: 2px solid black;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  left: 10%;
+  /* text-align: center; */
+}
+#Child {
+  width: 10px;
+}
+p {
+  color: orange;
+}
+#Nandu {
+  margin: auto;
+}
+img {
+  position: absolute;
+  margin-right: 120%;
+  width: 20%;
+}

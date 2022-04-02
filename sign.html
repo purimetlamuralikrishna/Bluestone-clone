@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sign.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- <button type="submit" id="btno">sign</button> -->
+    <div class="container">
+      <div class="up">
+        <div class="closebtn">&times;</div>
+        <h2>HELLO THERE, SIGNUP HERE</h2>
+      </div>
+      <div class="middle">
+        <div class="mini">
+          <div>
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+          <div>
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </div>
+          <div>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Mobile Number"
+            />
+          </div>
+        </div>
+        <div>
+          <input type="checkbox" name="privacy" class="checkbox" />
+          <span> Sign up for offers. View <a href="#"> Privacy Policy</a></span>
+        </div>
+        <div>
+          <input type="checkbox" name="term" class="checkbox" />
+          <span>I accept BlueStone <a href="#">Terms of Service</a> </span>
+        </div>
+
+        <div>
+          <button
+            onclick="window.location.href='login.html';"
+            id="submitbtn"
+            type="submit"
+          >
+            CREATE ACCOUNT
+          </button>
+          <p>Already Have an Account? <a href="login.html">Login</a></p>
+        </div>
+
+        <!-- <form action="">
+                <input type="text" name="name">
+                <input type="email" name="email">
+                <input type="number" name="number">
+            </form> -->
+      </div>
+      <div class="low">
+        <button
+          onclick="window.location.href='https://www.facebook.com/';"
+          class="facebook"
+        >
+          <span
+            ><a href="https://www.facebook.com/" class="fa fa-facebook"></a
+          ></span>
+          LOG IN WITH FACEBOOK
+        </button>
+      </div>
+    </div>
+    <!-- <script src="sign.js"></script> -->
+  </body>
+</html>
+<script>
+  //   document.querySelector("#btno").addEventListener("click", myfunc);
+  //   function myfunc() {
+  //     console.log("hello");
+  //     document.querySelector(".container").classList.add("active");
+  //   }
+
+   document.querySelector(".container").classList.add("active");
+   
+  document.querySelector(".closebtn").addEventListener("click", function () {
+    document.querySelector(".container").classList.remove("active");
+  });
+  document.querySelector("#submitbtn").addEventListener("click", signdata);
+  // document.querySelector("form").addEventListener('submit',myfunction)
+  var userData = JSON.parse(localStorage.getItem("userCreds")) || [];
+  function signdata() {
+    event.preventDefault();
+    var userObj = {
+      name: document.querySelector("#name").value,
+      email: document.querySelector("#email").value,
+      number: document.querySelector("#number").value,
+    };
+
+    userData.push(userObj);
+    console.log(userData);
+    localStorage.setItem("userCreds", JSON.stringify(userData));
+  }
+</script>

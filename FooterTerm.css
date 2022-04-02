@@ -1,0 +1,24 @@
+#Terms {
+  display: flex;
+}
+p {
+  color: orange;
+}
+h1 {
+  color: blue;
+  width: 40%;
+  text-align: center;
+  margin-left: 13%;
+}
+#nandu {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+#nandu > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  width: 100%;
+}

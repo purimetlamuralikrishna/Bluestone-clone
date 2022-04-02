@@ -54,30 +54,34 @@
     background-color: 
     #f15d47;
 }
+
 .dropbtn>span>i{
     font-size: 15px;
     color:white;
     font-weight: 600;
 }
 #rings{
+
+#rings-common{
+  
     display:flex;
     margin-top: -10px;
 }
-#rings>h2{
+#rings-common>h2{
    color:red;
    font-family: Muli,Arial,sans-serif;
    font-weight: 100;
    margin-top:25px;
    font-size:22px;
 } 
-#rings>div:nth-child(2){
+#rings-common>div:nth-child(2){
     border-left: 1px solid #CCC;
     background: #CCC;
     height: 25px;
     margin-left:20px;
     margin-top: 25px;
 }
-#rings>div:nth-child(3){
+#rings-common>div:nth-child(3){
    margin-top:18px;
    margin-left:20px;
    color:#666666;
