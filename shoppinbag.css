@@ -8,6 +8,17 @@ a{
 a:hover{
     text-decoration:none;
 }
+#top #top-corner a{
+    font-size: 15px;
+}
+#top{
+    width: 100%;
+    justify-content: space-evenly;
+}
+#search #butn{
+    height: 7%;
+}
+
 #box1{
     width:73%;
     height:auto;
