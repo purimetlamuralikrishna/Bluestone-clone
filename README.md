@@ -23,11 +23,6 @@ This is the clone of bluestone website which we made in Unit-2 construct week.
  
 -    VS code
 
-**Installation**
-
-- clone the repositery
-`https://github.com/purimetlamuralikrishna/Blue-stone-clone`
-
 ### [Website Flow](https://github.com/purimetlamuralikrishna/Blue-stone-clone/#website-flow)
 
 - Landing page is the main Index page 
@@ -36,6 +31,7 @@ This is the clone of bluestone website which we made in Unit-2 construct week.
 - Product details page
 - Place Order Page
 - Payment Page
+-[Click here to visit our website](https://delicate-pithivier-27faa0.netlify.app/)
 
 ![Screenshot (63)](https://user-images.githubusercontent.com/86877385/161432495-6735824f-ecad-4f36-8417-4e56570e3b91.png)
 ![Screenshot (64)](https://user-images.githubusercontent.com/86877385/161432516-167ebfbc-d70d-4ae8-988f-a08fce662062.png)
